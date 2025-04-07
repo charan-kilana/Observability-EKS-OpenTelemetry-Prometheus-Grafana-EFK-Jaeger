@@ -146,10 +146,9 @@ If you're unable to access the Prometheus, Grafana, or Alertmanager dashboards:
 
 Make sure your EC2 instance or worker node security groups allow inbound traffic on the following ports:
 
-- **80** – HTTP (Grafana, Prometheus UI)
+- **80** – HTTP
 - **443** – HTTPS (if using Ingress/TLS)
-- **8080**, **9090** – Prometheus
-- **9093** – Alertmanager
+- **8080**, **9090**, **9093**
 - **All Traffic** – *(for quick testing only; not recommended for production)*
 
 > ⚠️ Remember to **restrict access** to specific IPs in production environments for better security.
