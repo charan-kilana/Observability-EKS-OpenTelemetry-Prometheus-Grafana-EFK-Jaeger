@@ -78,7 +78,9 @@ eksctl create nodegroup --cluster=observability \
 aws eks update-kubeconfig --name observability
 ```
 
+
 ## 🛠️ Step 4: Install kube-prometheus-stack Helm Chart
+**Install Helm**
 ```bash
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
