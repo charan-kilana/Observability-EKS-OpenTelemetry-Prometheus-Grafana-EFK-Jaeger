@@ -92,7 +92,7 @@ If you dont meet then it could be a problem for the company who took the contrac
 
 ---
 
-### 📡 Prometheus
+### 📡 Prometheus and Grafana
 
 Learn what Prometheus is, understand its architecture, and see how to install and configure it on an EKS cluster.  
 This reference covers:
@@ -103,11 +103,6 @@ This reference covers:
 - Setting up Prometheus on EKS via Helm
 - Scraping application and infrastructure metrics
 
-- 🔗 [Prometheues Reference)](prometheus.md)
----
-
-### 📊 Grafana
-
 Learn about Grafana, how it connects with Prometheus and other data sources, and how to visualize metrics in dashboards.  
 This reference includes:
 
@@ -117,6 +112,6 @@ This reference includes:
 - Creating, importing, and customizing dashboards
 - Configuring alerts and role-based access control
 
-- 🔗 [Grafana Reference)](grafana.md)
+- 🔗 [Prometheues and Grafana Reference)](prometheus.md)
 ---
 
