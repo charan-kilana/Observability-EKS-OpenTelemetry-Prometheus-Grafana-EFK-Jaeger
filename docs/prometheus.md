@@ -126,15 +126,18 @@ kubectl --namespace monitoring get pods -l "release=monitoring"
 ```bash
 kubectl port-forward service/prometheus-operated -n monitoring 9090:9090
 ```
+![exporters](assets/prome_dashboard.png)
 - **Grafana UI**
 - Default login: admin / prom-operator (or check the secret)
 ```bash
 kubectl port-forward service/monitoring-grafana -n monitoring 8080:80
 ```
+![exporters](assets/grafana_dashboard.png)
 - **Alertmanager UI**:
 ```bash
 kubectl port-forward service/alertmanager-operated -n monitoring 9093:9093
 ```
+![exporters](assets/alert_manager_dashboard.png)
 ## ❗ Having Trouble Accessing Dashboards?
 
 If you're unable to access the Prometheus, Grafana, or Alertmanager dashboards:
