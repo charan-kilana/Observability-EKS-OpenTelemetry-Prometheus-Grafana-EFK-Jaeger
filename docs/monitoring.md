@@ -103,7 +103,7 @@ This reference covers:
 - Setting up Prometheus on EKS via Helm
 - Scraping application and infrastructure metrics
 
-- 🔗 [📄 Prometheus Reference](docs/prometheus.md)
+- 🔗 [📄 Prometheus Reference](docs/grafana.md)
 
 ---
 
