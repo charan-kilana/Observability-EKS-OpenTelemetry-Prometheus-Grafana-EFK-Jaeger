@@ -97,9 +97,23 @@ Fork my repo, go to: **"Observability-EKS-OpenTelemetry-Prometheus-Grafana-EFK-J
 /prometheus/"**
 and install the Prometheus Helm release using:
 ```bash
-helm install prometheus prometheus-community/kube-prometheus-stack --namespace monitoring
+cd /root/Observability-EKS-OpenTelemetry-Prometheus-Grafana-EFK-Jaeger/prometheus
+
+helm install monitoring prometheus-community/kube-prometheus-stack \
+-n monitoring \
+-f ./custom_kube_prometheus_stack.yml
 ```
 
 ![Helm_Installation](assets/helm_install_prometheus.png)
 
+## 🛠️ Step 7: Verify the Installation
+```bash
+kubectl get all -n monitoring
+```
 
+## 🛠️ Step 8: Check its status by running
+Here you can see that you've two **node-exporter** one **kube-state-metrics**
+```bash
+kubectl --namespace monitoring get pods -l "release=monitoring"
+```
+![exporters](assets/prome_metrics.png)
