@@ -71,6 +71,7 @@ eksctl create nodegroup --cluster=observability \
                         --appmesh-access \
                         --alb-ingress-access
 ```
+![Node_Installation](assets/node_group.png)
 
 ## 🛠️ Step 3: Update Your ~/.kube/config
 ```bash
