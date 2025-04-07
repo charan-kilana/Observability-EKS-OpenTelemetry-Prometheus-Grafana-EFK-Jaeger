@@ -103,8 +103,7 @@ This reference covers:
 - Setting up Prometheus on EKS via Helm
 - Scraping application and infrastructure metrics
 
-- 🔗 [📄 Prometheus Reference](docs/grafana.md)
-
+- 🔗 [Prometheues Reference)](docs/prometheus.md)
 ---
 
 ### 📊 Grafana
@@ -118,7 +117,6 @@ This reference includes:
 - Creating, importing, and customizing dashboards
 - Configuring alerts and role-based access control
 
-- 🔗 [📄 Grafana Reference](docs/grafana.md)
-
+- 🔗 [Grafana Reference)](docs/grafana.md)
 ---
 
