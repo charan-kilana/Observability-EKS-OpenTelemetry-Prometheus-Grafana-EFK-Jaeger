@@ -25,6 +25,16 @@ Yes! **Monitoring is a subset of Observability.**
 
 ---
 
+# Monitoring
+
+## Metrics vs Monitoring
+
+Metrics are measurements or data points that tell you what is happening. For example, the number of steps you walk each day, your heart rate, or the temperature outside—these are all metrics.
+
+Monitoring is the process of keeping an eye on these metrics over time to understand what’s normal, identify changes, and detect problems. It's like watching your step count daily to see if you're meeting your fitness goal or checking your heart rate to make sure it's in a healthy range.
+
+---
+
 ## 📦 Categories of Monitoring (with Prometheus Metric Examples)
 
 | Category                  | What’s Monitored                                      | Prometheus Metric Examples                     | Exporter/Tool              |
@@ -77,3 +87,38 @@ If you dont meet then it could be a problem for the company who took the contrac
 - **Zabbix**
 - **PRTG**
 - **Fluent Bit**
+
+## 📦 Monitoring Tool References
+
+---
+
+### 📡 Prometheus
+
+Learn what Prometheus is, understand its architecture, and see how to install and configure it on an EKS cluster.  
+This reference covers:
+
+- Prometheus architecture & components
+- Metric types (Counter, Gauge, Histogram, Summary)
+- Exporters (e.g., Node Exporter, Kube-State-Metrics)
+- Setting up Prometheus on EKS via Helm
+- Scraping application and infrastructure metrics
+
+- 🔗 [📄 Prometheus Reference](docs/prometheus.md)
+
+---
+
+### 📊 Grafana
+
+Learn about Grafana, how it connects with Prometheus and other data sources, and how to visualize metrics in dashboards.  
+This reference includes:
+
+- Grafana architecture
+- Installing Grafana on EKS
+- Accessing Grafana UI and setting up data sources
+- Creating, importing, and customizing dashboards
+- Configuring alerts and role-based access control
+
+- 🔗 [📄 Grafana Reference](docs/grafana.md)
+
+---
+
