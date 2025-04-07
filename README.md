@@ -39,6 +39,8 @@ Tracing involves following the path of a request as it travels through various s
 
 Together, **metrics**, **logs**, and **traces** form the foundation of a truly observable system. By combining these three pillars, we gain comprehensive visibility into both the **technical health** and **business behavior** of applications.
 
+![Observability Overview](docs/assets/obs_pic.png)
+
 ## 📚 Observability Reference
 
 - [📊 Monitoring (Metrics)](docs/monitoring.md)
