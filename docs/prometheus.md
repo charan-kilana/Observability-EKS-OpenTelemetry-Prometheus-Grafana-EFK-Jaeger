@@ -120,7 +120,7 @@ kubectl --namespace monitoring get pods -l "release=monitoring"
 
 **Access the dashboards**
 
-**NOTE:** If you are using an EC2 Instance or Cloud VM, you need to pass `--address 0.0.0.0` to the above command. Then you can access the UI on <instance-ip:port>
+**NOTE:** If you are using an EC2 Instance or Cloud VM, you need to pass `--address 0.0.0.0` to the above command. Then you can access the UI on **<instance-ip:port>**
 
 - **Prometheus UI**:
 ```bash
