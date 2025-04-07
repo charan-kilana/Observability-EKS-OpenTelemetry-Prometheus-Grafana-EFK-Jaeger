@@ -32,6 +32,50 @@ It consists of several core components, each responsible for a specific aspect o
 
 ---
 
+## 🛠️ What is PromQL?
+- PromQL (Prometheus Query Language) is a powerful and flexible query language used to query data from Prometheus.
+- It allows you to retrieve and manipulate time series data, perform mathematical operations, aggregate data, and much more.
+
+- 🔑 Key Features of PromQL:
+    - Selecting Time Series: You can select specific metrics with filters and retrieve their data.
+    - Mathematical Operations: PromQL allows for mathematical operations on metrics.
+    - Aggregation: You can aggregate data across multiple time series.
+    - Functionality: PromQL includes a wide range of functions to analyze and manipulate data.
+---
+## ⚙️ Aggregation & Functions in PromQL
+- Aggregation in PromQL allows you to combine multiple time series into a single one, based on certain labels.
+- **Sum Up All CPU Usage**:
+    ```bash
+    sum(rate(node_cpu_seconds_total[5m]))
+    ```
+    - This query aggregates the CPU usage across all nodes.
+
+- **Average Memory Usage per Namespace:**
+    ```bash
+    avg(container_memory_usage_bytes) by (namespace)
+    ```
+    - This query provides the average memory usage grouped by namespace.
+
+- **rate() Function:**
+    - The rate() function calculates the per-second average rate of increase of the time series in a specified range.
+    ```bash
+    rate(container_cpu_usage_seconds_total[5m])
+    ```
+    - This calculates the rate of CPU usage over 5 minutes.
+- **increase() Function:**
+    - The increase() function returns the increase in a counter over a specified time range.
+    ```bash
+    increase(kube_pod_container_status_restarts_total[1h])
+    ```
+    - This gives the total increase in container restarts over the last hour.
+
+- **histogram_quantile() Function:**
+    - The histogram_quantile() function calculates quantiles (e.g., 95th percentile) from histogram data.
+    ```bash
+    histogram_quantile(0.95, sum(rate(apiserver_request_duration_seconds_bucket[5m])) by (le))
+    ```
+    - This calculates the 95th percentile of Kubernetes API request durations.
+---
 # 🛠️  Installation & Configurations
 
 ### Prerequisites
@@ -128,7 +172,7 @@ kubectl port-forward service/prometheus-operated -n monitoring 9090:9090
 ```
 ![exporters](assets/prome_dashboard.png)
 - **Grafana UI**
-- Default login: admin / prom-operator (or check the secret)
+- Default login: admin / **prom-operator** (or check the secret)
 ```bash
 kubectl port-forward service/monitoring-grafana -n monitoring 8080:80
 ```
