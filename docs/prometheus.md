@@ -100,5 +100,6 @@ and install the Prometheus Helm release using:
 helm install prometheus prometheus-community/kube-prometheus-stack --namespace monitoring
 ```
 
+![Helm_Installation](assets/helm_install_prometheus.png)
 
 
