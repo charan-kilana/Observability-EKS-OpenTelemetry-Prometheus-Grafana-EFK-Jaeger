@@ -12,7 +12,7 @@ It consists of several core components, each responsible for a specific aspect o
 
 ### 🖼️ Architecture Diagram
 
-![Prometheus Architecture](assets/prometheus_arch)
+![Prometheus Architecture](assets/prometheus_arch.png)
 
 ---
 
