@@ -90,8 +90,8 @@ kubectl create ns monitoring
 
 ## 🛠️ Step 6: Then Install the Chart
 
-Fork my repo, go to: **Observability-EKS-OpenTelemetry-Prometheus-Grafana-EFK-Jaeger
-/prometheus/**
+Fork my repo, go to: **"Observability-EKS-OpenTelemetry-Prometheus-Grafana-EFK-Jaeger
+/prometheus/"**
 and install the Prometheus Helm release using:
 ```bash
 helm install prometheus prometheus-community/kube-prometheus-stack --namespace monitoring
