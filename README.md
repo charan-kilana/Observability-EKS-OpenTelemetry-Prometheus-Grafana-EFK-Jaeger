@@ -97,6 +97,9 @@ In our microservices-based project, we use OpenTelemetry to trace requests flowi
 - **📝 Write Once, Use Anywhere**  
   You instrument your app once, and export to any backend like **Prometheus**, **Jaeger**, **Datadog**, **Zipkin**, etc.  
   This saves time and avoids vendor lock-in.
+**Example:**  
+If you're using `prom-client` (Prometheus client library) and later want to switch to **InfluxDB** or **Datadog**, you'll have to **rewrite the entire instrumentation code** to match the new backend’s SDK or library.  
+But with **OpenTelemetry**, you just **change the exporter configuration** — your application code stays the same.
 
 - **🌍 Open Source and CNCF-backed**  
   OpenTelemetry is an open-source project under the **Cloud Native Computing Foundation (CNCF)**.  
@@ -106,3 +109,4 @@ In our microservices-based project, we use OpenTelemetry to trace requests flowi
   Especially valuable in **microservice architectures**, where a single user request flows through multiple services.  
   OpenTelemetry helps you trace the full journey:  
   `Frontend → Service A → Service B → Database`
+
