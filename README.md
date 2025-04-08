@@ -87,9 +87,9 @@ In our microservices-based project, we use OpenTelemetry to trace requests flowi
 
 ## 📷 Instrumented Services with OpenTelemetry
 
-| Service Name     | Language | Screenshot |
-|------------------|----------|------------|
-| Cart             | C#       | <img src="docs/assets/cart_otel.png" alt="Cart OTEL" width="300"/> |
-| Advertisement    | Java     | <img src="docs/assets/ad_otel.png" alt="Ad OTEL" width="300"/> |
-| Checkout         | Go       | <img src="docs/assets/checkout_otel.png" alt="Checkout OTEL" width="300"/> |
+| Cart C# | Advertisement Java | Checkout Go |
+|--------------------|-------------------|-----------------|
+| ![Cart OTEL](docs/assets/cart_otel.png) | ![Ad OTEL](docs/assets/ad_otel.png) | ![Checkout OTEL](docs/assets/checkout_otel.png) |
+
+
 
