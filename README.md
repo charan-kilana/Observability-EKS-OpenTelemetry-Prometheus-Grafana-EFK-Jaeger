@@ -122,5 +122,7 @@ But with **OpenTelemetry**, you just **change the exporter configuration** — y
   Especially valuable in **microservice architectures**, where a single user request flows through multiple services.  
   OpenTelemetry helps you trace the full journey:  
   `Frontend → Service A → Service B → Database`
+
 ![otel_arch](docs/assets/otel_arch.png)
+
 
