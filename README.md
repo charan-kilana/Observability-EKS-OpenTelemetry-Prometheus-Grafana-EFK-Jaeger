@@ -46,3 +46,50 @@ Together, **metrics**, **logs**, and **traces** form the foundation of a truly o
 - [📊 Monitoring (Metrics)](docs/monitoring.md)
 - [🧾 Logging (Logs)](docs/logging.md)
 - [🧭 Tracing (Traces)](docs/tracing.md)
+
+# Deploy Application through Kubernetes Cluster and implement Observability
+
+This project is developed using **OpenTelemetry** and follows a **microservices architecture**. The application consists of multiple microservices written in different programming languages, each responsible for a specific functionality. The entire stack is deployed and managed through a **Kubernetes cluster**.
+
+## 🧩 Microservices Overview
+
+| Service Name     | Language   | Description                          |
+|------------------|------------|--------------------------------------|
+| Advertisement    | Java       | Handles product advertisement logic  |
+| Cart             | C#         | Manages shopping cart operations     |
+| Checkout         | Go         | Responsible for order checkout flow  |
+| Currency         | C++        | Converts currency values             |
+| Email            | Ruby       | Sends email notifications            |
+| Payment          | Node.js    | Manages payment transactions         |
+| Shipping         | Rust       | Handles shipping and delivery logic  |
+
+> 📝 Note: The `Currency` service is listed twice; ensure that there are no duplicates during deployment.
+
+# 📡 OpenTelemetry in Microservices
+
+## 🔍 What is OpenTelemetry?
+
+**OpenTelemetry (OTel)** is an open-source framework that provides standard APIs, SDKs, and tools to collect **traces**, **metrics**, and **logs** from applications.
+
+It helps teams achieve **observability** by showing what's happening inside applications, especially in distributed systems or microservices architecture.
+
+---
+
+## 🛠️ Real-Time Usage in Our Project
+
+In our microservices-based project, we use OpenTelemetry to trace requests flowing through different services. This helps us understand:
+
+- Where latency is occurring
+- Which service is causing issues
+- How requests propagate through the system
+
+---
+
+## 📷 Instrumented Services with OpenTelemetry
+
+| Service Name     | Language | Screenshot |
+|------------------|----------|------------|
+| Cart             | C#       | <img src="docs/assets/cart.pngs" alt="Cart OTEL" width="300"/> |
+| Advertisement    | Java     | <img src="docs/assets/ad_otel.pngs" alt="Ad OTEL" width="300"/> |
+| Checkout         | Go       | <img src="docs/assets/checkout_otel.pngs" alt="Checkout OTEL" width="300"/> |
+
