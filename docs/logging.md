@@ -2,7 +2,6 @@
 - Logging is crucial in any distributed system, especially in Kubernetes, to monitor application behavior, detect issues, and ensure the smooth functioning of microservices.
 - Its developer responsibilty to write down in application.
 
-
 ## 🚀 Importance:
 - **Debugging**: Logs provide critical information when debugging issues in applications.
 - **Auditing**: Logs serve as an audit trail, showing what actions were taken and by whom.
