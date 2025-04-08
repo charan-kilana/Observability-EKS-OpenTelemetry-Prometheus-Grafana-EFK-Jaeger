@@ -4,7 +4,7 @@
 
 To deploy this application on Amazon EKS, follow the instructions in the link below:
 
-👉 [EKS Cluster Setup Guide](assets/eks-setup.md)
+👉 [EKS Cluster Setup Guide](eks-setup.md)
 
 ## Add Helm chart
 
