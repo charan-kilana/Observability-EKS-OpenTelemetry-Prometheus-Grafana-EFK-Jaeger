@@ -89,7 +89,7 @@ In our microservices-based project, we use OpenTelemetry to trace requests flowi
 
 | Service Name     | Language | Screenshot |
 |------------------|----------|------------|
-| Cart             | C#       | <img src="docs/assets/cart.pngs" alt="Cart OTEL" width="300"/> |
-| Advertisement    | Java     | <img src="docs/assets/ad_otel.pngs" alt="Ad OTEL" width="300"/> |
-| Checkout         | Go       | <img src="docs/assets/checkout_otel.pngs" alt="Checkout OTEL" width="300"/> |
+| Cart             | C#       | <img src="docs/assets/cart.png" alt="Cart OTEL" width="300"/> |
+| Advertisement    | Java     | <img src="docs/assets/ad_otel.png" alt="Ad OTEL" width="300"/> |
+| Checkout         | Go       | <img src="docs/assets/checkout_otel.png" alt="Checkout OTEL" width="300"/> |
 
