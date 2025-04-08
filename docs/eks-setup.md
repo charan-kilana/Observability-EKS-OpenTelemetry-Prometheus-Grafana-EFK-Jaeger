@@ -40,4 +40,3 @@ Use the following command to create an EKS cluster named `three-tier-cluster` in
 ```bash
 eksctl create cluster --name three-tier-cluster --region us-east-1
 ```
-![EKS Install](images/eks-install.png)
