@@ -71,6 +71,19 @@ This project is developed using **OpenTelemetry** and follows a **microservices 
 
 **OpenTelemetry (OTel)** is an open-source framework that provides standard APIs, SDKs, and tools to collect **traces**, **metrics**, and **logs** from applications.
 
+## 🧰 How Developers Use OpenTelemetry
+
+Developers can use the **OpenTelemetry API/SDK** to instrument their application code for capturing **metrics**, **logs**, and **traces**.
+
+Once instrumented, they can configure in **exporter conguration file** to define **where to send the telemetry data**, such as:
+
+- 📊 **Prometheus** for metrics
+- 🌐 **Jaeger** or **Grafana Tempo** for traces
+- 📜 **ElasticSearch** for logs
+
+> 🛠️ This separation of instrumentation and export destination makes it easy to switch backends **without modifying the application code**.
+
+
 It helps teams achieve **observability** by showing what's happening inside applications, especially in distributed systems or microservices architecture.
 
 ---
@@ -109,4 +122,5 @@ But with **OpenTelemetry**, you just **change the exporter configuration** — y
   Especially valuable in **microservice architectures**, where a single user request flows through multiple services.  
   OpenTelemetry helps you trace the full journey:  
   `Frontend → Service A → Service B → Database`
+![otel_arch](docs/assets/otel_arch.png)
 
