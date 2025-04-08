@@ -92,4 +92,17 @@ In our microservices-based project, we use OpenTelemetry to trace requests flowi
 | ![Cart OTEL](docs/assets/cart_otel.png) | ![Ad OTEL](docs/assets/ad_otel.png) | ![Checkout OTEL](docs/assets/checkout_otel.png) |
 
 
+## ✅ Key Advantages of OpenTelemetry
 
+- **📝 Write Once, Use Anywhere**  
+  You instrument your app once, and export to any backend like **Prometheus**, **Jaeger**, **Datadog**, **Zipkin**, etc.  
+  This saves time and avoids vendor lock-in.
+
+- **🌍 Open Source and CNCF-backed**  
+  OpenTelemetry is an open-source project under the **Cloud Native Computing Foundation (CNCF)**.  
+  It's actively maintained and supported by major cloud providers and observability vendors.
+
+- **🔁 End-to-End Tracing**  
+  Especially valuable in **microservice architectures**, where a single user request flows through multiple services.  
+  OpenTelemetry helps you trace the full journey:  
+  `Frontend → Service A → Service B → Database`
