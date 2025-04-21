@@ -1,8 +1,7 @@
 module github.com/opentelemetry/opentelemetry-demo/src/product-catalog
 
 go 1.22.7
-
-toolchain go1.22.9
+toolchain go1.24.1
 
 require (
 	github.com/open-feature/go-sdk v1.14.1
@@ -17,9 +16,9 @@ require (
 	go.opentelemetry.io/otel/sdk v1.35.0
 	go.opentelemetry.io/otel/sdk/metric v1.35.0
 	go.opentelemetry.io/otel/trace v1.35.0
-	google.golang.org/grpc v1.71.0
+	google.golang.org/grpc v1.72.0
 	google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.5.1
-	google.golang.org/protobuf v1.36.5
+	google.golang.org/protobuf v1.36.6
 )
 
 require (
